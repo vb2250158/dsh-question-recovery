@@ -1,0 +1,43 @@
+{
+  "name": "dsh-question-recovery",
+  "version": "0.1.1",
+  "type": "module",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-tool",
+        "@deepseek-ai/dsh-client-ui-user-questions",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-api-session-controller"
+      ]
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.js"
+  },
+  "license": "MIT",
+  "author": "vb2250158",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vb2250158/dsh-question-recovery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vb2250158/dsh-question-recovery/issues"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "description": "Explicit follow-up answers for interrupted DSH questions"
+}
