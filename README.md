@@ -15,3 +15,5 @@ This release requires DSH 0.2.1-alpha.1 or a compatible 0.2 release. See [compat
 ## Plugin display metadata
 
 The plugin list shows **Question recovery** in English and **提问恢复** in Chinese, following the DSH interface language. `locale/en.json` and `locale/zh.json` provide the title and description; `icon.svg` supplies self-contained artwork. The package exports and publishes these resources. The icon is adapted from Lucide; see [ICON_LICENSE.txt](ICON_LICENSE.txt).
+
+The icon uses a centered 36 × 36 viewBox to leave more space around the artwork inside the plugin icon frame.
