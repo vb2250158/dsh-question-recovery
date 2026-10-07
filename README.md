@@ -11,3 +11,7 @@ This release requires DSH 0.2.1-alpha.1 or a compatible 0.2 release. See [compat
 ## Git 安装来源
 
 将 `<commit>` 替换为本仓库完整提交号。插件代码与运行所需产物随 Git 交付；用户设置、凭据和聊天记录不属于本仓库。
+
+## Plugin display metadata
+
+The plugin list shows **Question recovery** in English and **提问恢复** in Chinese, following the DSH interface language. `locale/en.json` and `locale/zh.json` provide the title and description; `icon.svg` supplies self-contained artwork. The package exports and publishes these resources. The icon is adapted from Lucide; see [ICON_LICENSE.txt](ICON_LICENSE.txt).

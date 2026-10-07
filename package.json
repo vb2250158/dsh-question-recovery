@@ -1,11 +1,13 @@
 {
   "name": "dsh-question-recovery",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "type": "module",
   "exports": {
     ".": "./lib/index.js",
     "./client": "./lib/client.js",
-    "./package.json": "./package.json"
+    "./package.json": "./package.json",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
   },
   "dsh": {
     "bundle": {
@@ -41,7 +43,10 @@
     "cordis.patch.yml",
     "README.md",
     "LICENSE",
-    "docs"
+    "docs",
+    "locale",
+    "icon.svg",
+    "ICON_LICENSE.txt"
   ],
   "description": "Explicit follow-up answers for interrupted DSH questions",
   "peerDependencies": {
@@ -49,5 +54,6 @@
     "@deepseek-ai/dsh-api-session-controller": ">=0.2.1-alpha.1 <0.3.0",
     "@deepseek-ai/dsh-client-ui-renderer": ">=0.2.1-alpha.1 <0.3.0",
     "@deepseek-ai/dsh-client-ui-session": ">=0.2.1-alpha.1 <0.3.0"
-  }
+  },
+  "icon": "./icon.svg"
 }
